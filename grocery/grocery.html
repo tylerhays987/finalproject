@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cashier Calculator</title>
+</head>
+<body>
+    <div class="admin">
+        <h2>Add a new product</h2>
+        <label for="productName">Product:</label>
+        <input type="text" id="productName">
+        <label for="productPrice">Price per unit:</label>
+        <input type="text" id="productPrice">
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div class="checkout">
+        <h2>checkout</h2>
+        <label for="selectProduct">Product:</label>
+        <select id="selectProduct"></select>
+        <button onclick="startNewTransaction()">New Transaction</button>
+
+        <div class="unit-buttons">
+          <button class="addUnit" onclick="addUnit(1)" value="1">1</button>
+          <button class="addUnit" onclick="addUnit(2)" value="2">2</button>
+          <button class="addUnit" onclick="addUnit(3)" value="3">3</button>
+          <button class="addUnit" onclick="addUnit(4)" value="4">4</button>
+          <button class="addUnit" onclick="addUnit(5)" value="5">5</button>
+          <button class="addUnit" onclick="addUnit(6)" value="6">6</button>
+          <button class="addUnit" onclick="addUnit(7)" value="7">7</button>
+          <button class="addUnit" onclick="addUnit(8)" value="8">8</button>
+          <button class="addUnit" onclick="addUnit(9)" value="9">9</button>
+      </div>
+
+        <label for="cartAmount">Amount:</label>
+        <input type="text" id="cartAmount" value=" " >
+        <button onclick="addToCart()">Add to Cart</button>
+
+        <button onclick="pay()">Pay</button>
+    </div>
+
+    <div class="receipt">
+        <h2>Receipt</h2>
+        <p>Shopping cart: <span id="shoppingCart"></span></p>
+        <p>quantity: <span id="quantity"></span> units</p>
+        <p>Total Price: $<span id="totalPrice"></span></p>
+        <p>Taxes: $<span id="taxes"></span></p>
+        <p>Amount Due: $<span id="amountDue"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

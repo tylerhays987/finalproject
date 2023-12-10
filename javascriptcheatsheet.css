@@ -1,0 +1,45 @@
+* {
+  transition: background-color 0.6s ease, color 1s ease;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+
+}
+
+.dark-mode {
+  background-color: #808080;
+}
+
+#darkmodebutton{
+  padding-top: -40px;
+
+}
+header {
+  text-align: center;
+  color: #black;
+  background-color: #008080;
+}
+#title{
+  background-color: #008080;
+}
+
+
+li {
+  display: inline-block;
+  position: center;
+  margin: 25px 25px;
+}
+a{
+  color: black;
+  text-align: center;
+}
+a:hover {
+  color: orange;
+}
+p{
+  margin-left: 700px;
+  font-size: 20px;
+}
